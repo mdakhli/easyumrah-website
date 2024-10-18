@@ -9,54 +9,67 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #FFD700;
+            background-color: #f5f5f5; /* Leichtes Grau statt Schwarz */
+            color: #333; /* Dunkles Grau statt Gold für Text */
         }
         header {
-            background-color: #333;
-            color: #FFD700;
+            background-color: #ffffff; /* Weißer Header */
+            color: #333; /* Dunkles Grau für Text */
             padding: 20px;
             text-align: center;
+            border-bottom: 2px solid #ddd; /* Dezente Grenze */
         }
         nav {
             display: flex;
             justify-content: space-around;
-            background-color: #444;
+            background-color: #ffffff; /* Weißer Hintergrund für die Navigation */
             padding: 10px;
+            border-bottom: 1px solid #ddd; /* Dezente Grenze */
         }
         nav a {
-            color: #FFD700;
+            color: #333; /* Dunklerer Text statt Gold */
             text-decoration: none;
             padding: 10px;
         }
         nav a:hover {
-            background-color: #666;
+            background-color: #eee; /* Heller Hover-Effekt */
             border-radius: 5px;
         }
         .active {
-            background-color: #FFD700;
-            color: #000;
+            background-color: #4CAF50; /* Grün als Aktive Farbe */
+            color: #fff;
             border-radius: 5px;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #111;
+            background-color: #fff; /* Weißer Hintergrund für den Container */
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: #FFD700;
+            background-color: #ffffff; /* Weißer Footer */
+            color: #666; /* Dezentes Grau für Text */
+            border-top: 2px solid #ddd;
             position: relative;
             bottom: 0;
             width: 100%;
         }
         h1, h2 {
-            color: #FFD700;
+            color: #333; /* Dunkles Grau für Überschriften */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li strong {
+            color: #4CAF50; /* Grün für Akzente */
         }
     </style>
 </head>
