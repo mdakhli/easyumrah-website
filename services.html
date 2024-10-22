@@ -3,93 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dienstleistungen - EasyUmrah</title>
+    <title>Unsere Dienstleistungen - EasyUmrah</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #FFD700;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
             background-color: #333;
-            color: #FFD700;
+            color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #444;
+            background-color: #4CAF50;
             padding: 10px;
+            display: flex;
+            justify-content: center;
         }
         nav a {
-            color: #FFD700;
+            color: white;
+            padding: 10px 20px;
             text-decoration: none;
-            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
         }
         nav a:hover {
-            background-color: #666;
-            border-radius: 5px;
-        }
-        .active {
-            background-color: #FFD700;
-            color: #000;
-            border-radius: 5px;
+            background-color: #333;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #111;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .service-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .service-box img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .service-box h3 {
+            margin: 0;
+            color: #4CAF50;
         }
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #333;
-            color: #FFD700;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Dienstleistungen - EasyUmrah</h1>
+        <h1>Unsere Dienstleistungen</h1>
+        <p>Deine Reise nach Mekka und Medina – individuell, flexibel und komfortabel.</p>
     </header>
 
     <nav>
         <a href="index.html">Startseite</a>
-        <a href="pakete.html">Unsere Pakete</a>
         <a href="services.html" class="active">Dienstleistungen</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
     <div class="container">
-        <h2>Zusätzliche Dienstleistungen</h2>
-        <p>Um deine Umrah-Reise so angenehm und flexibel wie möglich zu gestalten, bieten wir eine Vielzahl von zusätzlichen Dienstleistungen an. 
-        Diese können in jedem unserer Pakete hinzugefügt werden und sorgen dafür, dass du deinen Aufenthalt in Mekka und Medina sorgenfrei genießen kannst.</p>
+        <div class="service-box">
+            <img src="flight_service.jpg" alt="Flugbuchungen">
+            <div>
+                <h3>Flugbuchungen</h3>
+                <p>Wir bieten dir die besten Flugangebote für deine Umrah-Reise. Flexible Buchungsmöglichkeiten und Sonderangebote für Frühbucher oder Last-Minute-Reisende.</p>
+            </div>
+        </div>
 
-        <ul>
-            <li><strong>Ihram & Kopftuch:</strong> Traditionelle Kleidung für die Umrah.</li>
-            <li><strong>Zugtickets nach Medina:</strong> Bequemer Transport von Mekka nach Medina.</li>
-            <li><strong>Zamzam-Wasser Lieferung:</strong> Genieße das heilige Zamzam-Wasser auf deiner Reise.</li>
-            <li><strong>Erweitertes Gepäckvolumen:</strong> Perfekt, wenn du mehr Platz für Souvenirs und Kleidung benötigst.</li>
-        </ul>
+        <div class="service-box">
+            <img src="hotel_service.jpg" alt="Hotelbuchungen">
+            <div>
+                <h3>Hotelbuchungen</h3>
+                <p>Finde das ideale Hotel, das zu deinen Bedürfnissen passt. Von Budget-Unterkünften bis hin zu luxuriösen Hotels – wir haben für jeden etwas dabei.</p>
+            </div>
+        </div>
 
-        <h3>Individuelle Wünsche?</h3>
-        <p>Wenn du spezielle Wünsche hast, wie z.B. private Transfers, VIP-Services oder maßgeschneiderte Reisepläne, dann sprich uns an! 
-        Unser Ziel ist es, deine Umrah-Reise zu einem unvergesslichen Erlebnis zu machen.</p>
+        <div class="service-box">
+            <img src="visa_service.jpg" alt="Visum">
+            <div>
+                <h3>Umrah-Visum</h3>
+                <p>Wir kümmern uns um die Visa-Beantragung, damit du dich auf die wichtigen spirituellen Aspekte deiner Reise konzentrieren kannst. Schnell und unkompliziert.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <img src="transport_service.jpg" alt="Zugtickets nach Medina">
+            <div>
+                <h3>Zugtickets nach Medina</h3>
+                <p>Buche deine Zugreise von Mekka nach Medina. Komfortabler und schneller Transport, der deine Reise angenehm macht.</p>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="services.html">Dienstleistungen</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
     </footer>
 
 </body>
