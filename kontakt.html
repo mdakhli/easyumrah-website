@@ -6,75 +6,80 @@
     <title>Kontakt - EasyUmrah</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #FFD700;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
-            background-color: #333;
-            color: #FFD700;
+            background-color: #4CAF50;
+            color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
+            background-color: #333;
+            padding: 10px;
             display: flex;
             justify-content: space-around;
-            background-color: #444;
-            padding: 10px;
         }
         nav a {
-            color: #FFD700;
-            text-decoration: none;
+            color: white;
             padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
         }
         nav a:hover {
-            background-color: #666;
-            border-radius: 5px;
-        }
-        .active {
-            background-color: #FFD700;
-            color: #000;
-            border-radius: 5px;
+            background-color: #4CAF50;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #111;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #FFD700;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         input, textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            background-color: #222;
-            color: #FFD700;
-            border: 1px solid #FFD700;
+            background-color: #eee;
+            border: 1px solid #ddd;
             border-radius: 5px;
         }
         button {
-            background-color: #FFD700;
-            color: #000;
+            background-color: #4CAF50;
+            color: white;
             padding: 10px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
         }
         button:hover {
+            background-color: #45a049;
+        }
+        footer {
             background-color: #333;
-            color: #FFD700;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -86,7 +91,6 @@
 
     <nav>
         <a href="index.html">Startseite</a>
-        <a href="pakete.html">Unsere Pakete</a>
         <a href="services.html">Dienstleistungen</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html" class="active">Kontakt</a>
@@ -94,7 +98,7 @@
 
     <div class="container">
         <h2>Kontaktiere uns</h2>
-        <p>Du hast Fragen oder möchtest eine Umrah-Reise buchen? Nutze das untenstehende Formular, um uns zu kontaktieren. Wir werden uns schnellstmöglich bei dir melden.</p>
+        <p>Hast du Fragen oder möchtest eine Umrah-Reise buchen? Nutze das untenstehende Formular oder kontaktiere uns direkt per E-Mail oder WhatsApp.</p>
 
         <form>
             <label for="name">Name:</label>
@@ -117,6 +121,12 @@
 
     <footer>
         <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="services.html">Dienstleistungen</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
     </footer>
 
 </body>
