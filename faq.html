@@ -3,105 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Häufig gestellte Fragen</title>
+    <title>FAQ - EasyUmrah</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             color: #333;
         }
-        header {
-            background-color: #4CAF50;
+        header, footer {
+            background-color: #2c3e50;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
         nav {
-            background-color: #333;
-            padding: 10px;
+            background-color: #2c3e50;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
         }
         nav a {
             color: white;
-            padding: 10px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #4CAF50;
+            background-color: #34495e;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .faq-question {
+            cursor: pointer;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        footer ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        footer ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        footer ul li a:hover {
-            text-decoration: underline;
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            border-left: 3px solid #27ae60;
+            margin-bottom: 10px;
+            background-color: #fff;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>FAQ - Häufig gestellte Fragen</h1>
-    </header>
+<header>
+    <h1>FAQ - Häufig gestellte Fragen</h1>
+</header>
 
-    <nav>
-        <a href="index.html">Startseite</a>
-        <a href="services.html">Dienstleistungen</a>
-        <a href="faq.html" class="active">FAQ</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
+<nav>
+    <a href="index.html">Startseite</a>
+    <a href="services.html">Dienstleistungen</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
 
-    <div class="container">
-        <h2>Häufig gestellte Fragen</h2>
+<div class="container">
+    <h2>Häufig gestellte Fragen</h2>
 
-        <h3>Wie buche ich eine Umrah-Reise?</h3>
-        <p>Kontaktiere uns über WhatsApp, E-Mail oder unser Kontaktformular. Wir helfen dir bei der Auswahl und Buchung aller Dienstleistungen.</p>
-
-        <h3>Kann ich die Reise selbst planen?</h3>
-        <p>Ja! Unser DIY-Umrah-Guide unterstützt dich bei jedem Schritt, damit du deine Reise selbst organisieren kannst.</p>
-
-        <h3>Wie lange im Voraus sollte ich buchen?</h3>
-        <p>Wir empfehlen, mindestens 1-2 Monate im Voraus zu buchen, um alle Arrangements rechtzeitig zu treffen.</p>
-
-        <h3>Welche zusätzlichen Services bietet ihr an?</h3>
-        <p>Wir bieten Zugtickets, Ihram, Abaya, Zamzam-Wasser und vieles mehr an. Sprich uns einfach an!</p>
+    <!-- Frage 1 -->
+    <div class="faq-question">Wie buche ich eine Umrah-Reise?</div>
+    <div class="faq-answer">
+        Kontaktiere uns über WhatsApp, E-Mail oder unser Kontaktformular. Wir helfen dir bei der Auswahl und Buchung aller Dienstleistungen.
     </div>
 
-    <footer>
-        <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="services.html">Dienstleistungen</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </footer>
+    <!-- Frage 2 -->
+    <div class="faq-question">Kann ich die Reise selbst planen?</div>
+    <div class="faq-answer">
+        Ja! Unser DIY-Umrah-Guide unterstützt dich bei jedem Schritt, damit du deine Reise selbst organisieren kannst.
+    </div>
+
+    <!-- Frage 3 -->
+    <div class="faq-question">Wie lange im Voraus sollte ich buchen?</div>
+    <div class="faq-answer">
+        Wir empfehlen, mindestens 1-2 Monate im Voraus zu buchen, um alle Arrangements rechtzeitig zu treffen.
+    </div>
+
+    <!-- Frage 4 -->
+    <div class="faq-question">Welche zusätzlichen Services bietet ihr an?</div>
+    <div class="faq-answer">
+        Wir bieten Zugtickets, Ihram, Abaya, Zamzam-Wasser und vieles mehr an. Sprich uns einfach an!
+    </div>
+
+    <!-- Frage 5 -->
+    <div class="faq-question">Ist eine Umrah für Frauen anders als für Männer?</div>
+    <div class="faq-answer">
+        Die meisten Umrah-Rituale sind für Frauen und Männer gleich. Frauen tragen jedoch eine Abaya statt eines Ihram, und einige Regeln, wie der Aufenthalt im Haram, können unterschiedlich sein.
+    </div>
+
+    <!-- Frage 6 -->
+    <div class="faq-question">Was ist die Nusuk-App und wie hilft sie mir bei der Umrah?</div>
+    <div class="faq-answer">
+        Die Nusuk-App unterstützt dich bei der Buchung von Ritualen und Dienstleistungen während deiner Umrah. Sie ist eine offizielle App der saudischen Behörden und erleichtert die Planung deiner Pilgerreise.
+    </div>
+
+    <!-- Frage 7 -->
+    <div class="faq-question">Brauche ich spezielle Impfungen für die Umrah?</div>
+    <div class="faq-answer">
+        Ja, für die Einreise nach Saudi-Arabien wird in der Regel eine Impfung gegen Meningokokken (ACWY) sowie eine COVID-19-Impfung empfohlen. Es ist ratsam, dies mit deinem Arzt zu besprechen und die aktuellen Richtlinien zu beachten.
+    </div>
+
+    <!-- Frage 8 -->
+    <div class="faq-question">Wie erhalte ich eine eSIM-Karte für meine Umrah-Reise?</div>
+    <div class="faq-answer">
+        Wir bieten eSIM-Karten für deine Reise an, damit du in Saudi-Arabien stets verbunden bleibst. Kontaktiere uns, um mehr darüber zu erfahren und die richtige eSIM für dich zu buchen.
+    </div>
+
+    <!-- Frage 9 -->
+    <div class="faq-question">Gibt es Rabatte für Gruppenbuchungen?</div>
+    <div class="faq-answer">
+        Ja, wir bieten attraktive Rabatte für Gruppen ab 4 Personen an. Je mehr Teilnehmer, desto höher der Preisnachlass. Kontaktiere uns für ein individuelles Angebot.
+    </div>
+
+    <!-- Frage 10 -->
+    <div class="faq-question">Wie läuft der Flughafen-Transfer ab?</div>
+    <div class="faq-answer">
+        Wir organisieren einen bequemen Transfer vom Flughafen in Jeddah oder Medina zu deinem Hotel und zurück. Unser Fahrer holt dich direkt am Terminal ab und bringt dich sicher zu deiner Unterkunft.
+    </div>
+
+    <!-- Frage 11 -->
+    <div class="faq-question">Was sind die besten Reisezeiten für die Umrah?</div>
+    <div class="faq-answer">
+        Die beste Zeit für die Umrah ist außerhalb der Hauptsaison (Hajj). Beliebte Monate sind Ramadan und die Wintermonate. Während des Ramadan ist die Umrah besonders spirituell, jedoch auch viel besucht.
+    </div>
+
+    <!-- Frage 12 -->
+    <div class="faq-question">Was sollte ich für meine Umrah-Reise mitnehmen?</div>
+    <div class="faq-answer">
+        Für die Umrah solltest du bequeme Kleidung, deinen Ihram (für Männer), Abaya und Kopftuch (für Frauen), Reisedokumente, und persönliche Hygieneartikel mitnehmen. Vergiss nicht wichtige Medikamente und die Bestätigungen für deine Buchungen.
+    </div>
+
+    <!-- Frage 13 -->
+    <div class="faq-question">Gibt es eine Altersbeschränkung für die Umrah?</div>
+    <div class="faq-answer">
+        Es gibt keine feste Altersbeschränkung für die Umrah, jedoch sollten ältere oder gesundheitlich eingeschränkte Personen ihre körperlichen Fähigkeiten berücksichtigen. Für Kinder gibt es keine formellen Beschränkungen.
+    </div>
+
+    <!-- Frage 14 -->
+    <div class="faq-question">Wie lange dauert eine typische Umrah-Reise?</div>
+    <div class="faq-answer">
+        Eine typische Umrah-Reise dauert zwischen 5 und 10 Tagen, abhängig von den persönlichen Vorlieben und dem gewählten Programm. Wir helfen dir, die perfekte Reisedauer für dich zu finden.
+    </div>
+
+    <!-- Frage 15 -->
+    <div class="faq-question">Bietet ihr auch Unterstützung bei der Hajj-Reise?</div>
+    <div class="faq-answer">
+        Ja, neben der Umrah bieten wir auch Dienstleistungen für die Hajj an. Kontaktiere uns für mehr Informationen über unsere speziellen Hajj-Pakete und Dienstleistungen.
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
+    <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center; margin: 20px 0 0;">
+        <li style="margin: 0 15px;"><a href="index.html" style="color: white; text-decoration: none;">Startseite</a></li>
+        <li style="margin: 0 15px;"><a href="services.html" style="color: white; text-decoration: none;">Dienstleistungen</a></li>
+        <li style="margin: 0 15px;"><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+        <li style="margin: 0 15px;"><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
+    </ul>
+</footer>
+
+<script>
+// JavaScript für die Interaktion mit den FAQ
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const answer = item.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
 
 </body>
 </html>
