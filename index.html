@@ -3,86 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyUmrah - Startseite</title>
+    <title>EasyUmrah - Spirituelle Umrah-Reisen</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5; /* Leichtes Grau statt Schwarz */
-            color: #333; /* Dunkles Grau statt Gold für Text */
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
-            background-color: #ffffff; /* Weißer Header */
-            color: #333; /* Dunkles Grau für Text */
-            padding: 20px;
+            background-image: url('header_image_umrah.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
             text-align: center;
-            border-bottom: 2px solid #ddd; /* Dezente Grenze */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
         }
         nav {
+            background-color: #333;
+            padding: 10px 0;
             display: flex;
             justify-content: space-around;
-            background-color: #ffffff; /* Weißer Hintergrund für die Navigation */
-            padding: 10px;
-            border-bottom: 1px solid #ddd; /* Dezente Grenze */
         }
         nav a {
-            color: #333; /* Dunklerer Text statt Gold */
+            color: white;
             text-decoration: none;
             padding: 10px;
+            transition: background 0.3s;
         }
         nav a:hover {
-            background-color: #eee; /* Heller Hover-Effekt */
-            border-radius: 5px;
-        }
-        .active {
-            background-color: #4CAF50; /* Grün als Aktive Farbe */
-            color: #fff;
+            background-color: #4CAF50;
             border-radius: 5px;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff; /* Weißer Hintergrund für den Container */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .services-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .service-box {
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-box img {
+            width: 100px;
+            height: 100px;
+        }
+        .service-box h3 {
+            color: #4CAF50;
+        }
+        .call-to-action {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+        .call-to-action h2 {
+            margin: 0;
+        }
+        .call-to-action p {
+            font-size: 20px;
+        }
+        .call-to-action a {
+            background-color: white;
+            color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .call-to-action a:hover {
+            background-color: #333;
+            color: white;
         }
         footer {
-            text-align: center;
+            background-color: #333;
+            color: white;
             padding: 20px;
-            background-color: #ffffff; /* Weißer Footer */
-            color: #666; /* Dezentes Grau für Text */
-            border-top: 2px solid #ddd;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
         }
-        h1, h2 {
-            color: #333; /* Dunkles Grau für Überschriften */
-        }
-        ul {
+        footer ul {
             list-style-type: none;
             padding: 0;
         }
-        ul li {
-            margin: 10px 0;
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
         }
-        ul li strong {
-            color: #4CAF50; /* Grün für Akzente */
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>EasyUmrah - Günstige und Luxuriöse Umrah-Reisen</h1>
-        <p>Plane deine spirituelle Reise mit Stil, Komfort und Flexibilität</p>
+        <div>
+            <h1>EasyUmrah</h1>
+            <p>Dein Partner für eine unvergessliche und spirituelle Umrah-Reise</p>
+        </div>
     </header>
 
     <nav>
         <a href="index.html" class="active">Startseite</a>
-        <a href="pakete.html">Unsere Pakete</a>
         <a href="services.html">Dienstleistungen</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html">Kontakt</a>
@@ -90,27 +141,41 @@
 
     <div class="container">
         <h2>Willkommen bei EasyUmrah</h2>
-        <p>EasyUmrah bietet dir die perfekte Möglichkeit, deine Umrah-Reise unabhängig und individuell zu gestalten. 
-        Mit unserem umfassenden Angebot an Reisepaketen, von kostengünstigen Optionen bis hin zu luxuriösen All-Inclusive-Angeboten, 
-        kannst du deine Pilgerfahrt so planen, wie es zu dir passt. Ob du alleine oder mit deiner Familie reist, EasyUmrah kümmert sich um 
-        alle Details, damit du dich auf das Wesentliche konzentrieren kannst.</p>
+        <p>Wir bei EasyUmrah sind darauf spezialisiert, dir eine stressfreie und spirituell erfüllende Umrah-Reise zu ermöglichen. Ob du ein einfaches Budget-Paket oder eine luxuriöse Pilgerreise suchst, wir bieten dir Flexibilität und Komfort. Mit unserer langjährigen Erfahrung in der Reiseplanung kannst du dich auf uns verlassen, während du dich auf die spirituellen Aspekte deiner Reise konzentrierst.</p>
 
-        <h3>Warum EasyUmrah?</h3>
-        <ul>
-            <li><strong>Flexibilität:</strong> Keine Reisegruppen. Du bestimmst dein Tempo und deine Reiseroute.</li>
-            <li><strong>Luxus und Komfort:</strong> Wähle aus unseren Premium- und Luxus-Paketen für ein erstklassiges Reiseerlebnis.</li>
-            <li><strong>Umfassender Service:</strong> Wir kümmern uns um Flug, Hotel, Visa und Extras wie Zamzam-Wasser und mehr Gepäck.</li>
-            <li><strong>24/7 Support:</strong> Unser Team steht dir jederzeit zur Verfügung, um deine Reise reibungslos zu gestalten.</li>
-        </ul>
+        <div class="services-section">
+            <div class="service-box">
+                <img src="flight_icon.png" alt="Flugbuchungen">
+                <h3>Flugbuchungen</h3>
+                <p>Buche günstige und komfortable Flüge nach Mekka und Medina, angepasst an dein Budget.</p>
+            </div>
+            <div class="service-box">
+                <img src="hotel_icon.png" alt="Hotelbuchungen">
+                <h3>Hotelbuchungen</h3>
+                <p>Wähle aus einer großen Auswahl an Hotels in Mekka und Medina – von Budget bis Luxus.</p>
+            </div>
+            <div class="service-box">
+                <img src="visa_icon.png" alt="Visum">
+                <h3>Umrah-Visum</h3>
+                <p>Schnelle und unkomplizierte Bearbeitung deines Umrah-Visums, damit du dich auf deine Reise konzentrieren kannst.</p>
+            </div>
+        </div>
 
-        <h3>Unser Versprechen</h3>
-        <p>EasyUmrah steht für Qualität und Zuverlässigkeit. Unsere Pakete sind so gestaltet, dass sie dir nicht nur eine spirituelle Reise bieten, 
-        sondern auch ein komfortables, sorgenfreies Erlebnis. Ob du das Basic-Paket wählst oder dich für ein Premium- oder Luxus-Paket entscheidest – 
-        wir garantieren, dass du deine Reise voll und ganz genießen wirst.</p>
+        <div class="call-to-action">
+            <h2>Bereit für deine Umrah-Reise?</h2>
+            <p>Kontaktiere uns und wir helfen dir, die perfekte Reise zu planen.</p>
+            <a href="kontakt.html">Kontaktiere uns jetzt</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten. Deine Reise beginnt hier!</p>
+        <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="services.html">Dienstleistungen</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
     </footer>
 
 </body>
