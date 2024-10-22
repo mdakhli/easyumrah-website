@@ -9,18 +9,17 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             color: #333;
         }
-        header {
-            background-color: #333;
+        header, footer {
+            background-color: #2c3e50;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
         nav {
-            background-color: #4CAF50;
-            padding: 10px;
+            background-color: #2c3e50;
             display: flex;
             justify-content: center;
         }
@@ -28,118 +27,150 @@
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            margin: 0 10px;
-            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #333;
+            background-color: #34495e;
         }
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .service-box {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
             display: flex;
-            align-items: center;
+            margin-bottom: 20px;
         }
         .service-box img {
-            width: 150px;
-            height: 150px;
-            margin-right: 20px;
+            width: 120px;
+            height: 120px;
             border-radius: 10px;
+            margin-right: 20px;
         }
         .service-box h3 {
-            margin: 0;
-            color: #4CAF50;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        footer ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        footer ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        footer ul li a:hover {
-            text-decoration: underline;
+            margin-top: 0;
+            color: #27ae60;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Unsere Dienstleistungen</h1>
-        <p>Deine Reise nach Mekka und Medina – individuell, flexibel und komfortabel.</p>
-    </header>
+<header>
+    <h1>Unsere Dienstleistungen</h1>
+</header>
 
-    <nav>
-        <a href="index.html">Startseite</a>
-        <a href="services.html" class="active">Dienstleistungen</a>
-        <a href="faq.html">FAQ</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
+<nav>
+    <a href="index.html">Startseite</a>
+    <a href="services.html" class="active">Dienstleistungen</a>
+    <a href="faq.html">FAQ</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
 
-    <div class="container">
-        <div class="service-box">
-            <img src="flight_service.jpg" alt="Flugbuchungen">
-            <div>
-                <h3>Flugbuchungen</h3>
-                <p>Wir bieten dir die besten Flugangebote für deine Umrah-Reise. Flexible Buchungsmöglichkeiten und Sonderangebote für Frühbucher oder Last-Minute-Reisende.</p>
-            </div>
-        </div>
+<div class="container">
+    <h2>Wir bieten dir folgende Dienstleistungen für eine stressfreie Umrah-Reise:</h2>
 
-        <div class="service-box">
-            <img src="hotel_service.jpg" alt="Hotelbuchungen">
-            <div>
-                <h3>Hotelbuchungen</h3>
-                <p>Finde das ideale Hotel, das zu deinen Bedürfnissen passt. Von Budget-Unterkünften bis hin zu luxuriösen Hotels – wir haben für jeden etwas dabei.</p>
-            </div>
-        </div>
-
-        <div class="service-box">
-            <img src="visa_service.jpg" alt="Visum">
-            <div>
-                <h3>Umrah-Visum</h3>
-                <p>Wir kümmern uns um die Visa-Beantragung, damit du dich auf die wichtigen spirituellen Aspekte deiner Reise konzentrieren kannst. Schnell und unkompliziert.</p>
-            </div>
-        </div>
-
-        <div class="service-box">
-            <img src="transport_service.jpg" alt="Zugtickets nach Medina">
-            <div>
-                <h3>Zugtickets nach Medina</h3>
-                <p>Buche deine Zugreise von Mekka nach Medina. Komfortabler und schneller Transport, der deine Reise angenehm macht.</p>
-            </div>
+    <div class="service-box">
+        <img src="flight_service.jpg" alt="Flugbuchungen">
+        <div>
+            <h3>Flugbuchungen</h3>
+            <p>Wir suchen und buchen die besten Flüge nach Mekka und Medina, abgestimmt auf deine Bedürfnisse.</p>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="services.html">Dienstleistungen</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </footer>
+    <div class="service-box">
+        <img src="hotel_service.jpg" alt="Hotelbuchungen">
+        <div>
+            <h3>Hotelbuchungen</h3>
+            <p>Wir bieten eine breite Auswahl an Hotels in Mekka und Medina, die zu jedem Budget und Komfort passen.</p>
+        </div>
+    </div>
 
-</body>
-</html>
+    <div class="service-box">
+        <img src="visa_service.jpg" alt="Umrah-Visum">
+        <div>
+            <h3>Umrah-Visum</h3>
+            <p>Wir kümmern uns um die Beantragung und Abwicklung deines Umrah-Visums, schnell und unkompliziert.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="transfer_service.jpg" alt="Flughafen-Transfers">
+        <div>
+            <h3>Flughafen-Transfers</h3>
+            <p>Wir organisieren komfortable Transfers vom Flughafen zu deinem Hotel, damit du stressfrei ankommst.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="ihram_service.jpg" alt="Ihram und Abaya">
+        <div>
+            <h3>Ihram oder Abaya mit Kopftuch</h3>
+            <p>Kostenlose Bereitstellung von Ihram (für Männer) oder Abaya mit Kopftuch (für Frauen) für deine spirituelle Reise.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="train_service.jpg" alt="Zugtickets nach Medina">
+        <div>
+            <h3>Zugtickets</h3>
+            <p>Bequeme Zugbuchungen zwischen Mekka und Medina – schneller und komfortabler Transport.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="nusuk_app.jpg" alt="Nusuk-App Buchungen">
+        <div>
+            <h3>Nusuk-App Buchungen</h3>
+            <p>Wir unterstützen dich bei der Buchung von Ritualen und Dienstleistungen über die Nusuk-App.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="esim_service.jpg" alt="E-SIM">
+        <div>
+            <h3>E-SIM</h3>
+            <p>Bleibe auch im Ausland stets verbunden mit einer eSIM-Karte, die wir dir zur Verfügung stellen.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="online_course.jpg" alt="Online-Vorbereitungskurse">
+        <div>
+            <h3>Online-Vorbereitungskurse</h3>
+            <p>Unsere virtuellen Kurse bereiten dich auf alle wichtigen Rituale und Abläufe der Umrah vor.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="group_discount.jpg" alt="Gruppenrabatt">
+        <div>
+            <h3>Gruppenrabatt ab 4 Personen</h3>
+            <p>Erhalte attraktive Preisnachlässe für Gruppenbuchungen ab vier Personen – ideal für Familien und Freunde.</p>
+        </div>
+    </div>
+
+    <div class="service-box">
+        <img src="support_service.jpg" alt="24/7-Kundensupport">
+        <div>
+            <h3>24/7-Kundensupport</h3>
+            <p>Unser engagiertes Support-Team steht dir rund um die Uhr zur Verfügung, um alle deine Fragen zu beantworten.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 EasyUmrah. Alle Rechte vorbehalten.</p>
+    <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center; margin: 20px 0 0;">
+        <li style="margin: 0 15px;"><a href="index.html" style="color: white; text-decoration: none;">Startseite</a></li>
+        <li style="margin: 0 15px;"><a href="services.html" style="color: white; text-decoration: none;">Dienstleistungen</a></li>
+        <li style="margin: 0 15px;"><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+        <li style="margin: 0 15px;"><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
+    </ul>
+    
+    
+    </body>
+    </html>
+    
